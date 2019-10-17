@@ -1,0 +1,78 @@
+body {
+    background: #121212;
+    font-size: 18px !important;
+}
+
+.bar {
+    width: 100%;
+  height: 2px;
+  display: block;
+  position: relative;
+  background: #FFF;
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0s;
+}
+
+.bar.topBar{
+    transform: translateY(-6px) rotate(0deg);
+}
+
+ .bar.bottomBar{
+    transform: translateY(6px) rotate(0deg);
+}
+
+
+.menu-mobile {
+   display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-mobile {
+        display: block;
+     }
+     
+}
+
+.menu-mobile.menu-active {
+    height: 100%;
+ 
+  transition: all 0.2s ease-in, background 0.5s ease-in;
+  transition-delay: 0.25s;
+}
+
+.menu-mobile.menu-active .burger-cont {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.menu-mobile.menu-active .burger-cont .bar{
+    transition-delay: 0.1s;
+}
+
+
+
+
+.menu-mobile.menu-active .burger-cont  .bar.topBar{
+    transform: translateY(0px) rotate(45deg);
+}
+
+.menu-mobile.menu-active .burger-cont  .bar.bottomBar{
+    transform: translateY(-2px) rotate(-45deg);
+}
+
+.menu-mobile .nav-container {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 98px;
+    transition: all ease 0.3s;
+    opacity: 0;
+
+}
+
+.menu-mobile.menu-active .nav-container {
+    visibility: visible;
+    background: #fff;
+    opacity: 1;
+}
