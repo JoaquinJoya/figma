@@ -2,10 +2,10 @@ import React from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components'
 import { Container, FlexContainerSpaceBetween } from '../Styled Components/globalStyled'
-import Logo from '../../../Images/logo.svg'
+import Logo from '../../Images/logo.svg'
 import DefaultHeader from './defaultHeader'
 import MobileMenu from "./mobileMenu"
-import { device } from '../../../styles/devices'
+import { device } from '../../styles/devices'
 
 
 

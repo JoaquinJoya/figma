@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../Componets/layout"
 
 
- const Blog = () => (
+ const Four= () => (
     <Layout>
         
     </Layout>
  )
 
- export default Blog
+ export default Four

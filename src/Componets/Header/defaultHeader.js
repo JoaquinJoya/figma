@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import  NavLinkItem  from './navLink.js'
-import { device } from '../../../styles/devices'
+import { device } from '../../styles/devices'
 
 
 const Nav = styled.nav`

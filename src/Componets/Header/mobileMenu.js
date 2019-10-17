@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components'
-import { device } from '../../../styles/devices'
+import { device } from '../../styles/devices'
 
 const BurgerContainer = styled.div`
     display: none;
