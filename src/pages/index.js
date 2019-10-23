@@ -3,9 +3,7 @@ import Layout from "../Componets/layout"
 
 
  const IndexPage = () => (
-    <Layout>
-        
-    </Layout>
+    <Layout/>
  )
 
  export default IndexPage

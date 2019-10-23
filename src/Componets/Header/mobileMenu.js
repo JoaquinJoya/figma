@@ -42,14 +42,14 @@ const Nav = styled.ul`
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px
+        padding: 40px;
 
 `
 
 const NavItem = styled.li`
   
   &:not(:last-child) {
-    margin: 0 0 22px 0
+    margin: 0 0 22px 0;
   }
 `
 
