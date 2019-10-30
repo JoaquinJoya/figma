@@ -1,7 +1,43 @@
+/*Fonts*/
+
+font-face {
+    font-family: 'Bw';
+    font-weight: 500;
+    font-display: swap;
+    src: url('../../static/fonts/bw/bw_seido_raw_medium-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../../static/fonts/bw/bw_seido_raw_medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../static/fonts/bw/bw_seido_raw_medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../static/fonts/bw/bw_seido_raw_medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../static/fonts/bw/bw_seido_raw_medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../static/fonts/bw/bw_seido_raw_medium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Bw';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../../static/fonts/bw/bw_seido_raw_regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../../static/fonts/bw/bw_seido_raw_regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../static/fonts/bw/bw_seido_raw_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../static/fonts/bw/bw_seido_raw_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../static/fonts/bw/bw_seido_raw_regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../static/fonts/bw/bw_seido_raw_regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, a, ul, ol, li, blockquote {
+    font-family: 'Bw';
+  }
+
+
+
+
 body {
     background: #121212;
     font-size: 18px !important;
 }
+
+/*Mobile Menu Animation*/
+
 
 .bar {
     width: 100%;
@@ -50,8 +86,6 @@ body {
 }
 
 
-
-
 .menu-mobile.menu-active .burger-cont  .bar.topBar{
     transform: translateY(0px) rotate(45deg);
 }
@@ -76,4 +110,23 @@ body {
     background: #fff;
     opacity: 1;
     transform: translateY(26px);
+}
+
+
+/*Home Page*/
+
+#Hero {
+    padding: 60px 0 80PX 0;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    max-width: 760px;
+    align-items: center;
+
+}
+
+.ContainerHome {
+    background-image: url('../Images/figma-logo-bg.svg') ;
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    
 }
